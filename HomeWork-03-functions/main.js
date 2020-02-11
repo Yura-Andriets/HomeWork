@@ -1,23 +1,22 @@
 /**
- * Created by PC on 09.02.2020.
+ * Created by PC on 11.02.2020.
  */
-
-console.log(`
 
 
 function getMaxDigit(number) {
     let str = number.toString();
     str = str.split('');
     let result = 0;
-        for(let i = 1; i <= str.length-1; i++ ){
-            if ( str[0] < str[i] ){
-               str[0] = str[i];
-               result = str[0];
-            };
+    for(let i = 1; i <= str.length-1; i++ ){
+        if ( str[0] < str[i] ){
+            str[0] = str[i];
+            result = str[0];
         };
+    };
+ return result;
 }
 
-getMaxDigit(2589);
+console.log("Result of the getMaxDigit function: " + getMaxDigit(2985));
 
 
 function getSquare(n, m) {
@@ -26,30 +25,31 @@ function getSquare(n, m) {
         result = 1;
     };
     for (let i = 1; i < m; i++ ) {
-       result *= n;
+        result *= n;
     };
+ return result;
 }
 
-getSquare(6, 2);
+console.log("Result of the getSquare function: " + getSquare(6, 2) );
 
 
-const getNameUppercase = ( str ) => { result = str[0].toUpperCase() + str.substr(1).toLowerCase(); }
+const getNameUppercase = str => result = str[0].toUpperCase() + str.substr(1).toLowerCase();
 
-getNameUppercase( "YuRiIIIII" );
+console.log("Result of the getNameUppercase function: " + getNameUppercase( "YuRiIIIII" ) );
 
 
-const getProfit = sum => { profit = ( sum - ( ( sum / 100 ) * 19.5 ) ); }
+const getProfit = sum => profit = ( sum - ( ( sum / 100 ) * 19.5 ) );
 
-getProfit(1000);
+console.log("Result of the getProfit function: " + getProfit(1000) );
 
 
 function getRandomNumber(n, m) {
     let randomNumber = Math.random();
     let number = Math.floor( randomNumber * ( m -n + 1) + n  );
-    console.log(+number);
+  return number;
 }
 
-getRandomNumber(1, 10);
+console.log("Result of the getRandomNumber function: " + getRandomNumber(1, 10) );
 
 
 function countLetter(str, letter) {
@@ -58,83 +58,103 @@ function countLetter(str, letter) {
     str = str.toLowerCase();
     for ( let i = 0; i <= str.length - 1; i++ ) {
         if ( letter === str[i] ) {
-               result ++ ;
-            };
+            result ++ ;
+        };
     };
+ return result;
 }
 
-countLetter("АстаЛАвистАА", "А");
+console.log("Result of the countLetter function: " + countLetter("АстаЛАвистАА", "А") );
 
 
 function convertCurrency(str) {
     let sum = parseInt(str);
     let result, wrongCurrency;
-        for( let i = 0; i <= str.length-1; i++ ) {
-            if ( str[i] === "$" ) {
-                result = sum * 25 + " Uah";
-            } else if ( str[i].toLowerCase() + "ah" === "uah" ) {
-                result = sum / 25 + " $";
-            }else {
-                wrongCurrency = "Валюта выбрана не правильно";
-            };
+    for( let i = 0; i <= str.length-1; i++ ) {
+        if ( str[i] === "$" ) {
+            result = sum * 25 + " Uah";
+        } else if ( str[i].toLowerCase() + "ah" === "uah" ) {
+            result = sum / 25 + " $";
+        }else {
+            wrongCurrency = "Валюта выбрана не правильно";
         };
+    };
+ return result || wrongCurrency;
 }
 
-convertCurrency("100$");
+console.log("Result of the convertCurrency function: " + convertCurrency("100$") );
 
 
 function getRandomPassword( number = 8 ) {
     let result = '';
-        for ( let i = 0; i < number; i++ ) {
-            let ramdomNumber = Math.random();
-            result += Math.round( ramdomNumber * 10 );
-        };
+    for ( let i = 0; i < number; i++ ) {
+        let ramdomNumber = Math.random();
+        result += Math.round( ramdomNumber * 10 );
+    };
+ return result;
 }
 
-getRandomPassword(5);
+console.log("Result of the getRandomPassword function: " + getRandomPassword(5) );
 
 
 function deleteLetter(str, letter) {
     let result = '';
-        for( let i = 0; i <= str.length-1; i++ ) {
-            if ( letter.toLowerCase() !== str[i].toLowerCase() ) {
-                result += str[i];
-            };
+    for( let i = 0; i <= str.length-1; i++ ) {
+        if ( letter.toLowerCase() !== str[i].toLowerCase() ) {
+            result += str[i];
         };
+    };
+ return result;
 }
 
-deleteLetter("hello and hi HHHH", "h");
+console.log("Result of the deleteLetter function: " + deleteLetter("hello and hi HHHH", "h") );
 
 
 function isPalyndrom(str) {
     str = str.replace( /\s/g,'' );
     let result = "";
-        for( let i = 0; i <= str.length-1; i++ ) {
-            let leftChar = str[i].toLowerCase();
-            let rightChar = str[str.length - ( i + 1 ) ].toLowerCase();
-                if ( leftChar !== rightChar) {
-                    result =  "Это НЕ палиндромом";
-                } else {
-                    result = "Это палиндромом";
-                };
+    for( let i = 0; i <= str.length-1; i++ ) {
+        let leftChar = str[i].toLowerCase();
+        let rightChar = str[str.length - ( i + 1 ) ].toLowerCase();
+        if ( leftChar !== rightChar) {
+            result =  "Это НЕ палиндромом";
+        } else {
+            result = "Это палиндромом";
         };
+    };
+ return result;
 }
 
-isPalyndrom("Аргентина манит негра");
+console.log("Result of the isPalyndrom function: " + isPalyndrom("Аргентина манит негра") );
 
 
 function deleteDuplicateLetter(str) {
     str = str.toLowerCase();
     let result = "";
-        for( let i = 0; i <= str.length-1; i++ ) {
-            let firstIndex = str.indexOf( str[i] );
-            let lastIndex = str.lastIndexOf( str[i] );
-                if ( firstIndex == lastIndex ) {
-                    result += str[i];
-                };
+    for( let i = 0; i <= str.length-1; i++ ) {
+        let firstIndex = str.indexOf( str[i] );
+        let lastIndex = str.lastIndexOf( str[i] );
+        if ( firstIndex == lastIndex ) {
+            result += str[i];
         };
+    };
+ return result;
 }
 
-deleteDuplicateLetter("Бисквит был очень нежный");
+console.log("Result of the deleteDuplicateLetter function: " + deleteDuplicateLetter("Бисквит был очень нежный") );
+
+document.writeln(`
+
+1. Result of the getMaxDigit function: ${getMaxDigit(2985)} <br>
+2. Result of the getSquare function: ${getSquare(6, 2)} <br>
+3. Result of the getNameUppercase function: ${getNameUppercase( "YuRiIIIII" )} <br> 
+4. Result of the getProfit function: ${getProfit(1000)} <br>
+5. Result of the getRandomNumber function: ${getRandomNumber(1, 10)} <br>
+6. Result of the countLetter function: ${countLetter("АстаЛАвистАА", "А")} <br> 
+7. Result of the convertCurrency function: ${convertCurrency("100$")} <br>
+8. Result of the getRandomPassword function: ${getRandomPassword(5)} <br>
+9. Result of the deleteLetter function: ${deleteLetter("hello and hi HHHH", "h")} <br>
+10. Result of the isPalyndrom function: ${isPalyndrom("Аргентина манит негра")} <br>
+11. Result of the deleteDuplicateLetter function: ${deleteDuplicateLetter("Бисквит был очень нежный")}
 
 `);
