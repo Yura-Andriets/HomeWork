@@ -33,19 +33,21 @@ function getSquare(n, m) {
 console.log("Result of the getSquare function: " + getSquare(6, 2) );
 
 
-const getNameUppercase = str => result = str[0].toUpperCase() + str.substr(1).toLowerCase();
+const getNameUppercase = str => str[0].toUpperCase() + str.substr(1).toLowerCase();
 
 console.log("Result of the getNameUppercase function: " + getNameUppercase( "YuRiIIIII" ) );
 
 
-const getProfit = sum => profit = ( sum - ( ( sum / 100 ) * 19.5 ) );
+const getProfit = sum => {
+    const tax = 19.5;
+    return ( sum - ( ( sum / 100 ) * tax ) )};
 
 console.log("Result of the getProfit function: " + getProfit(1000) );
 
 
 function getRandomNumber(n, m) {
-    let randomNumber = Math.random();
-    let number = Math.floor( randomNumber * ( m -n + 1) + n  );
+    const randomNumber = Math.random();
+    const number = Math.floor( randomNumber * ( m -n + 1) + n  );
   return number;
 }
 
@@ -68,18 +70,22 @@ console.log("Result of the countLetter function: " + countLetter("АстаЛАв
 
 
 function convertCurrency(str) {
+    const isFormatValid = /^[0-9]{1,}(\$|uah)$/.test(str.toLowerCase());
+    if (!isFormatValid) {
+        throw new Error('Incorrect data');
+    }
+
     let sum = parseInt(str);
-    let result, wrongCurrency;
+    let result;
+
     for( let i = 0; i <= str.length-1; i++ ) {
         if ( str[i] === "$" ) {
             result = sum * 25 + " Uah";
         } else if ( str[i].toLowerCase() + "ah" === "uah" ) {
             result = sum / 25 + " $";
-        }else {
-            wrongCurrency = "Валюта выбрана не правильно";
         };
     };
- return result || wrongCurrency;
+ return result;
 }
 
 console.log("Result of the convertCurrency function: " + convertCurrency("100$") );
@@ -112,16 +118,14 @@ console.log("Result of the deleteLetter function: " + deleteLetter("hello and hi
 
 function isPalyndrom(str) {
     str = str.replace( /\s/g,'' );
-    let result = "";
+    let result = true;
     for( let i = 0; i <= str.length-1; i++ ) {
         let leftChar = str[i].toLowerCase();
-        let rightChar = str[str.length - ( i + 1 ) ].toLowerCase();
-        if ( leftChar !== rightChar) {
-            result =  "Это НЕ палиндромом";
-        } else {
-            result = "Это палиндромом";
+        let rightChar = str[str.length - ( i + 1 )].toLowerCase();
+        if (leftChar !== rightChar) {
+            result = false;
         };
-    };
+    };    
  return result;
 }
 
