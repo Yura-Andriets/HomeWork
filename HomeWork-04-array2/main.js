@@ -13,21 +13,15 @@ const getRandomArray = (length, min, max) =>{
 }
 
 const randomArray = getRandomArray(10, 1, 100);
-console.log(randomArray)
+console.log(randomArray);
 
 
 const getModa = (...arguments) =>{
     let sum = 1;
     let min = 0;
     let number;
-    array = [...arguments]
-        .filter( a => {
-            if (a % 2 === 0) return 1;
-        })
-        .sort( (a , b) => {
-            if( a > b ) { return 1};
-            if( a < b ) { return -1};
-        });
+    const array = [...arguments].filter( a => a % 2 === 0 )
+        .sort( (a , b) => { ( a > b ) ? 1 : -1; } );
 
     for( let i = 0; i < array.length; i++){
         if( array[i] === array[i+1] ){
@@ -44,12 +38,12 @@ const getModa = (...arguments) =>{
     return number;
 }
 const moda = getModa(6, 2, 55, 11, 78, 4, 55, 77, 4, 87, 23, 2, 56, 3, 2, 4 );
-console.log(moda)
+console.log(moda);
 
 
 const getAverage = (...arguments) => {
     let sum = 0;
-    array =[...arguments].filter( (a) => {
+    const array =[...arguments].filter( a => {
         if(  a % 2 === 0) {
             return sum += a;
         };
@@ -63,9 +57,7 @@ console.log(average);
 
 const getMedian = (...arguments) => {
     let sum = 0;
-    array = [...arguments].filter( a => {
-        if ( a % 2 === 0) return 1;
-    });
+    const array = [...arguments].filter( a => a % 2 === 0);
     if (array.length % 2 !== 0) {
         for (let i = 0; i < array.length / 2; i++) {
             sum = array[i];
@@ -82,7 +74,7 @@ const median = getMedian(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2 );
 console.log(median);
 
 const getDividedByFive = (...arguments) => {
-    array = [...arguments].filter( func => {
+    const array = [...arguments].filter( func => {
         if(func % 5 === 0){
             return func;
         };
@@ -95,7 +87,7 @@ console.log(dividedByFive);
 
 
 const filterEvenNumbers = (...arguments) => {
-    array = [...arguments].filter( func => {
+    const array = [...arguments].filter( func => {
         if(func % 2 !== 0){
             return func;
         };
@@ -108,7 +100,7 @@ console.log(evenNumbers);
 
 
 const countPositiveNumbers = (...arguments) => {
-    array = [...arguments].filter( func => {
+    const array = [...arguments].filter( func => {
         if(func >= 0){
             return func;
         };
@@ -128,7 +120,7 @@ const replaceBadWord = (string) => {
     return string.replace(badWorlds, "****") ;
 }
 
-console.log(replaceBadWord("Are you fucking kidding? Holy shit! It's bullshit!"))
+console.log(replaceBadWord("Are you fucking kidding? Holy shit! It's bullshit!"));
 
 
 
