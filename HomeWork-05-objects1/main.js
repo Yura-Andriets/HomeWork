@@ -32,7 +32,7 @@ const students = [{
 
 
 function getSubject (students) {
-    const result = Object.keys(students.subject).map( a => (a[0].toUpperCase() + a.substr(1).toLowerCase()).replace(/_/g, " "));
+    const result = Object.keys(students.subject).map( str => (str[0].toUpperCase() + str.substr(1).toLowerCase()).replace(/_/g, " "));
     return result;
 }
 const subject = getSubject(students[0]);
@@ -43,22 +43,23 @@ function getAverageMark (students) {
     let length = 0;
     let array = 0;
     let averageMark;
-    Object.values( students.subject ).map( a => {
-        for( let i = 0; i < a.length; i++){
-            array += a[i];
+    Object.values( students.subject ).flatMap( item => {
+        for( let i = 0; i < item.length; i++){
+            array += item[i];
         }
-        length += a.length;
+        length += item.length;
         averageMark = +( array/length ).toFixed(2);
     });
     return averageMark;
 }
-const averageMark = getAverageMark(students[0]);
-console.log(averageMark);
+const averageNumber = getAverageMark(students[0]);
+console.log(averageNumber);
 
 
 function getStudentInfo (student){
+    let averageMark = averageNumber;
     let { course, name } = student;
-    const studentInfo = { course, name, averageMark: averageMark };
+    const studentInfo = { course, name, averageMark };
     return studentInfo;
 }
 const infoForStudent = getStudentInfo(students[0]);
@@ -67,7 +68,7 @@ console.log(infoForStudent);
 
 function getStudentsNames (student){
     const array = [];
-    student.map( a => { const {name} = a ; return array.push(name) } );
+    student.map( item => { const {name} = item ; return array.push(name) } );
     return array.sort();
 }
 let studentsNames = getStudentsNames(students);
@@ -77,11 +78,11 @@ console.log(studentsNames);
 function getBestStudents (student){
     let name;
     let number;
-    let accum = 0;
+    let item = 0;
     student.map ( (obj, i) => { 
         number = getAverageMark( student[i] );
-        if ( number  > accum ) {
-            accum = number;
+        if ( number > item ) {
+            item = number;
             name = obj.name;
         };
     });
@@ -107,7 +108,7 @@ console.log(letterWord);
 document.writeln(`
 
 1. Список (массив) предметов студентa - ${subject}<br><br>
-2. Средняя оценка студента по всем его предметам - ${averageMark}<br><br>
+2. Средняя оценка студента по всем его предметам - ${averageNumber}<br><br>
 3. Информация по студенту (курс, имя, средняя оценка) - ${Object.entries(infoForStudent)} <br><br>
 4. Имена студентов - ${studentsNames} <br><br>
 5. Имя лучшего студента по показателю средней оценки - ${bestStudent}<br><br>
