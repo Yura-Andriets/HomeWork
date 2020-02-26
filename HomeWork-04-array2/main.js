@@ -116,7 +116,7 @@ console.log(positiveNumbers);
 
 
 const replaceBadWord = (string) => {
-    let badWords =/fuck|shit/gi;
+    const badWords =/fuck|shit/gi;
     return string.replace(badWords, "****") ;
 }
 
