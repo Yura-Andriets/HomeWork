@@ -17,12 +17,11 @@ console.log(randomArray);
 
 
 const getModa = (...arguments) =>{
-    let sum = 1;
+    let sum = 0;
     let min = 0;
     let number;
-    const array = [...arguments].filter( a => a % 2 === 0 )
-        .sort( (a , b) => { ( a > b ) ? 1 : -1; } );
-
+    let array = [...arguments].filter( item => item^0 === item )
+       .sort( (a , b) =>  ( a > b )? 1 : -1);
     for( let i = 0; i < array.length; i++){
         if( array[i] === array[i+1] ){
             sum ++ ;
@@ -30,34 +29,35 @@ const getModa = (...arguments) =>{
             array[i] = array[i+1];
         };
         if(sum > min){
+            number = array[i];
             min = sum;
             sum = 1;
-            number = array[i];
         };
     };
     return number;
 }
-const moda = getModa(6, 2, 55, 11, 78, 4, 55, 77, 4, 87, 23, 2, 56, 3, 2, 4 );
+
+const moda = getModa(1,2,2,1,1,1.2,1,1.2,1);
 console.log(moda);
 
 
 const getAverage = (...arguments) => {
     let sum = 0;
     const array =[...arguments].filter( a => {
-        if(  a % 2 === 0) {
+        if(  a ^ 0 === a) {
             return sum += a;
         };
     });
     return sum = sum/array.length;
 }
-const average = getAverage(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2 )
+const average = getAverage(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2)
 console.log(average);
 
 
 
 const getMedian = (...arguments) => {
     let sum = 0;
-    const array = [...arguments].filter( a => a % 2 === 0);
+    const array = [...arguments].filter( a => a ^ 0 === a);
     if (array.length % 2 !== 0) {
         for (let i = 0; i < array.length / 2; i++) {
             sum = array[i];
@@ -70,7 +70,7 @@ const getMedian = (...arguments) => {
     return sum;
 }
 
-const median = getMedian(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2 );
+const median = getMedian(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2, 5 );
 console.log(median);
 
 const getDividedByFive = (...arguments) => {
@@ -116,8 +116,8 @@ console.log(positiveNumbers);
 
 
 const replaceBadWord = (string) => {
-    let badWorlds =/fuck|shit/gi;
-    return string.replace(badWorlds, "****") ;
+    let badWords =/fuck|shit/gi;
+    return string.replace(badWords, "****") ;
 }
 
 console.log(replaceBadWord("Are you fucking kidding? Holy shit! It's bullshit!"));
@@ -126,7 +126,7 @@ console.log(replaceBadWord("Are you fucking kidding? Holy shit! It's bullshit!")
 
 document.write(`
  Массив из 10 случайных целых чисел от 1 до 100 : ${randomArray}<br><br>
- Из набора числ 6, 2, 55, 11, 78, 4, 55, 77, 4, 87, 23, 2, 56, 3, 2, 4 -- Мода равна = ${moda}<br><br>
+ Из набора числ 1, 2, 2, 1, 1, 1.2, 1, 1.2, 1 -- Мода равна = ${moda}<br><br>
  Набор чисел : 6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2 <br><br>
  -- среднее арифметическое из набора числ (нецелые числа игнорируються) равно = ${average}<br><br>
  -- медиана из набора числ (нецелые числа игнорируються) равно = ${median}<br><br>
