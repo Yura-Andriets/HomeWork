@@ -21,7 +21,12 @@ const litva = {
     vacancies: 1114
 };
 
-const dreamSalary = parseInt(prompt("Введите желаемую зарплату "));
+let dreamSalary = parseInt(prompt("Введите желаемую зарплату "));
+
+while (!dreamSalary){
+    alert('Введите число');
+    dreamSalary = parseInt(prompt("Введите желаемую зарплату "));
+}
 
 
 function getMyTaxes (value){
@@ -52,20 +57,17 @@ const totalTaxesLitva = getTotalTaxes.call(litva);
 
 
 function getMySalary (min, max){
-    const salary = Math.floor(Math.random()* (max-min+1) + min);
-    const taxes = Math.floor(this.tax * salary);
-    const profit = salary - taxes;
-    const obj = {salary, taxes, profit};
-    console.log(obj);
+    const interval = setInterval( ()=> {
+        const salary = Math.floor(Math.random() * (max - min + 1) + min);
+        const taxes = Math.floor(this.tax * salary);
+        const profit = salary - taxes;
+        const obj = {salary, taxes, profit};
+        console.log(obj);
+    }, 10000);
+    setTimeout( () => { clearInterval(interval) }, 100000 );
 }
 
-function mySalary () {
-    getMySalary.call(ukraine, 1500, 2000);
-}
-
-let interval = setInterval(mySalary, 10000);
-
-setTimeout( () => { clearInterval(interval) }, 50000 );
+getMySalary.call(ukraine, 1500, 2000);
 
 
 document.write(`
