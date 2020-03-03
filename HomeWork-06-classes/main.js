@@ -26,11 +26,7 @@ class Student {
     }
 
     getAverage (){
-        let array = 0;
-        for( let i = 0; i < this.marks.length; i++){
-            array += this.marks[i];
-        }
-        const averageMark = +( array/this.marks.length ).toFixed(1);
+        const averageMark = ( this.marks.reduce( (sum, current) => sum + current )/this.marks.length ).toFixed(1);
         return averageMark;
     }
 
@@ -52,7 +48,8 @@ class BudgetStudent extends Student{
     }
 
     getScholarship (){
-        if(!this.expelledStudent && this.getAverage() >= 4){
+        const markScholarship = 4.0;
+        if(!this.expelledStudent && this.getAverage() >= markScholarship){
             return console.log("Вы получили 1400 грн степендии");
         }else{
             return console.log("Стипендию студент не получает, низкий бал или отчислен з университета")
@@ -72,7 +69,7 @@ document.write(`
 
 Оценки студента ${infoStudent.marks}.<br><br>
 
-Студент получил за первый экзамен = ${infoStudent.marks = 3}<br>
+Студент получил за первый экзамен = ${infoStudent.marks = 3}<br><br>
 Студент получил за второй экзамен = ${infoStudent.marks = 4}<br><br>
  
 Оценки студента ${infoStudent.marks}.<br><br> 
