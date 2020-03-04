@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="107ae1d4-82c6-420e-9ec7-3bc3d5bedd5e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+=======
+    <list default="true" id="107ae1d4-82c6-420e-9ec7-3bc3d5bedd5e" name="Default" comment="" />
+>>>>>>> dfe7f3eb99496800851ec998f7ce231fa5c22e3a
     <ignored path="HomeWork Cursor.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,6 +27,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HomeWork-05-objects2/main.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -31,20 +36,40 @@
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
+=======
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HomeWork-06-classes/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+              <folding />
+>>>>>>> dfe7f3eb99496800851ec998f7ce231fa5c22e3a
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HomeWork-05-objects2/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
               <folding />
+=======
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HomeWork-06-classes/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="87" selection-end-column="2" />
+              <folding>
+                <element signature="n#!!doc;n#Student#0" expanded="false" />
+              </folding>
+>>>>>>> dfe7f3eb99496800851ec998f7ce231fa5c22e3a
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HomeWork-05-objects1/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,6 +80,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> dfe7f3eb99496800851ec998f7ce231fa5c22e3a
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -103,10 +130,18 @@
         <option value="$PROJECT_DIR$/HomeWork-04-array2/main.js" />
         <option value="$PROJECT_DIR$/HomeWork-05-objects1/style-05.css" />
         <option value="$PROJECT_DIR$/HomeWork-05-objects1/index.html" />
-        <option value="$PROJECT_DIR$/HomeWork-05-objects1/main.js" />
         <option value="$PROJECT_DIR$/HomeWork-05-objects2/style-05.css" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/HomeWork-05-objects2/main.js" />
         <option value="$PROJECT_DIR$/HomeWork-05-objects2/index.html" />
+=======
+        <option value="$PROJECT_DIR$/HomeWork-05-objects2/index.html" />
+        <option value="$PROJECT_DIR$/HomeWork-05-objects1/main.js" />
+        <option value="$PROJECT_DIR$/HomeWork-05-objects2/main.js" />
+        <option value="$PROJECT_DIR$/HomeWork-06-classes/style-06.css" />
+        <option value="$PROJECT_DIR$/HomeWork-06-classes/index.html" />
+        <option value="$PROJECT_DIR$/HomeWork-06-classes/main.js" />
+>>>>>>> dfe7f3eb99496800851ec998f7ce231fa5c22e3a
       </list>
     </option>
   </component>
@@ -117,8 +152,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="width" value="941" />
     <option name="height" value="1040" />
+=======
+    <option name="width" value="1306" />
+    <option name="height" value="728" />
+>>>>>>> dfe7f3eb99496800851ec998f7ce231fa5c22e3a
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -151,73 +191,31 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-Cursor" />
+              <option name="myItemId" value="HomeWork Cursor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-Cursor" />
+              <option name="myItemId" value="HomeWork Cursor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-Cursor" />
+              <option name="myItemId" value="HomeWork Cursor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-Cursor" />
+              <option name="myItemId" value="HomeWork Cursor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-Cursor" />
+              <option name="myItemId" value="HomeWork Cursor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-05-objects2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-Cursor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-Cursor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-05-objects1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-Cursor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-Cursor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-04-array2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-Cursor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-Cursor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork-03-functions" />
+              <option name="myItemId" value="HomeWork-06-classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -226,7 +224,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Нова папка/HomeWork-Cursor/HomeWork-03-functions" />
+=======
+    <property name="last_opened_file_path" value="F:/Test" />
+>>>>>>> dfe7f3eb99496800851ec998f7ce231fa5c22e3a
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -335,14 +337,24 @@
       <workItem from="1582553943703" duration="202000" />
       <workItem from="1582613816344" duration="1027000" />
       <workItem from="1582623999719" duration="349000" />
+<<<<<<< HEAD
       <workItem from="1582804803485" duration="1195000" />
       <workItem from="1582877883110" duration="17000" />
       <workItem from="1582966157421" duration="1398000" />
       <workItem from="1582971520756" duration="27000" />
+=======
+      <workItem from="1582804803485" duration="1032000" />
+      <workItem from="1583092259836" duration="5000" />
+      <workItem from="1583092327459" duration="1252000" />
+      <workItem from="1583179659601" duration="4187000" />
+      <workItem from="1583229655011" duration="189000" />
+      <workItem from="1583246951896" duration="73000" />
+>>>>>>> dfe7f3eb99496800851ec998f7ce231fa5c22e3a
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="46484000" />
   </component>
   <component name="ToolWindowManager">
@@ -350,6 +362,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18272425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+    <option name="totallyTimeSpent" value="50585000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1306" height="728" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19873817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> dfe7f3eb99496800851ec998f7ce231fa5c22e3a
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06873977" sideWeight="0.50595236" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -401,9 +422,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HomeWork-03-functions/HW-03-functions.js" />
-    <entry file="file://$PROJECT_DIR$/HomeWork-03-functions/HW-03-functions.html" />
-    <entry file="file://F:/Test/index.html" />
     <entry file="file://F:/Test/js.js" />
     <entry file="file://$PROJECT_DIR$/HomeWork -00-git/HM-00-git.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -433,13 +451,6 @@
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/style.css" />
     <entry file="file://$PROJECT_DIR$/js.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HomeWork -01-variables and_data_types/HM-01-variables_and_data_type.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -558,8 +569,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HomeWork-05-objects1/main.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="748">
           <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+=======
+        <state relative-caret-position="808">
+          <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
+>>>>>>> dfe7f3eb99496800851ec998f7ce231fa5c22e3a
         </state>
       </provider>
     </entry>
@@ -567,24 +583,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="26" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="26" />
+<<<<<<< HEAD
           <folding />
+=======
+>>>>>>> dfe7f3eb99496800851ec998f7ce231fa5c22e3a
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HomeWork-05-objects2/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="85">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+=======
+        <state relative-caret-position="238">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HomeWork-05-objects2/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="68" column="56" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HomeWork-06-classes/style-06.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HomeWork-06-classes/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+>>>>>>> dfe7f3eb99496800851ec998f7ce231fa5c22e3a
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/HomeWork-05-objects2/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
+=======
+    <entry file="file://$PROJECT_DIR$/HomeWork-06-classes/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="87" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc;n#Student#0" expanded="false" />
+>>>>>>> dfe7f3eb99496800851ec998f7ce231fa5c22e3a
           </folding>
         </state>
       </provider>

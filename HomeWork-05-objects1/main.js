@@ -57,7 +57,7 @@ console.log(averageNumber);
 
 
 function getStudentInfo (student){
-    let averageMark = averageNumber;
+    let averageMark = getAverageMark(student);
     let { course, name } = student;
     const studentInfo = { course, name, averageMark };
     return studentInfo;
@@ -66,9 +66,8 @@ const infoForStudent = getStudentInfo(students[0]);
 console.log(infoForStudent);
 
 
-function getStudentsNames (student){
-    const array = [];
-    student.map( item => { const {name} = item ; return array.push(name) } );
+function getStudentsNames (students){
+    const array = students.map( item => item.name );
     return array.sort();
 }
 let studentsNames = getStudentsNames(students);
@@ -79,7 +78,7 @@ function getBestStudents (student){
     let name;
     let number;
     let item = 0;
-    student.map ( (obj, i) => { 
+    student.forEach ( (obj, i) => { 
         number = getAverageMark( student[i] );
         if ( number > item ) {
             item = number;

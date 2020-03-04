@@ -56,8 +56,10 @@ const totalTaxesLatvia = getTotalTaxes.call(latvia);
 const totalTaxesLitva = getTotalTaxes.call(litva);
 
 
-function getMySalary (min, max){
+function getMySalary (){
     const interval = setInterval( ()=> {
+        const min = 1500;
+        const max = 2000;
         const salary = Math.floor(Math.random() * (max - min + 1) + min);
         const taxes = Math.floor(this.tax * salary);
         const profit = salary - taxes;
@@ -67,7 +69,7 @@ function getMySalary (min, max){
     setTimeout( () => { clearInterval(interval) }, 100000 );
 }
 
-getMySalary.call(ukraine, 1500, 2000);
+getMySalary.call(ukraine);
 
 
 document.write(`
