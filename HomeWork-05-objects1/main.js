@@ -58,7 +58,7 @@ console.log(averageNumber);
 
 function getStudentInfo (student){
     let averageMark = getAverageMark(student);
-    let { course, name } = student;
+    const { course, name } = student;
     const studentInfo = { course, name, averageMark };
     return studentInfo;
 }
