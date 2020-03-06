@@ -16,13 +16,11 @@ class Student {
     }
 
     get marks (){
-        const bookMarks = (this.expelledStudent) ? ("Отчислен из универа, оценки " + null) : this.marksStudent;
-        return bookMarks;
+        return ((this.expelledStudent) ? null : this.marksStudent);
     }
 
     set marks (value){
-        const markExamStudent = (this.expelledStudent) ? ("Отчислен из универа, оценки " + null) : this.marksStudent.push(value);
-        return markExamStudent;
+        if (!this.expelledStudent) {return this.marksStudent.push(value)}
     }
 
     getAverage (){
@@ -31,28 +29,28 @@ class Student {
     }
 
     dismiss(){
-        return this.expelledStudent = true;
+        this.expelledStudent = true;
     }
 
     recover(){
-        return this.expelledStudent = false;
+        this.expelledStudent = false;
 
     }
 }
 
 
 class BudgetStudent extends Student{
-    constructor (){
-        super();
+    constructor (...options){
+        super(...options);
         this.interval = setInterval( () => ( this.getScholarship() ), 30000);
     }
 
     getScholarship (){
         const markScholarship = 4.0;
         if(!this.expelledStudent && this.getAverage() >= markScholarship){
-            return console.log("Вы получили 1400 грн степендии");
+            console.log("Вы получили 1400 грн степендии");
         }else{
-            return console.log("Стипендию студент не получает, низкий бал или отчислен з университета")
+            console.log("Стипендию студент не получает, низкий бал или отчислен з университета")
         }
     }
 
@@ -60,8 +58,23 @@ class BudgetStudent extends Student{
 
 let infoStudent = new Student("Киевский политехнический институт", 3, "Андриец Юрий");
 
-let student = new BudgetStudent();
+let student = new BudgetStudent("University", 5, "Bender");
+console.log(student.getInfo());
 
+student.marks = 9;
+console.log(student);
+
+student.dismiss();
+student.marks = 10;
+student.marks = 11;
+student.marks = 12;
+console.log(student);
+
+// student.recover();
+//
+// student.marks = 15;
+// student.marks = 20;
+// console.log(student);
 
 document.write(`
 
