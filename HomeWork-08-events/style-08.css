@@ -1,0 +1,48 @@
+html {
+    background-image: url("notes.jpg");
+    font-size: 10px;
+    background-size: cover;
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    min-height: 150vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.key, .plaing {
+    border: 0.3rem solid black;
+    border-radius: .5rem;
+    margin: 4rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    width: 10rem;
+    text-align: center;
+    color: yellow;
+    background-color: lightgreen;
+    height: 100px;
+}
+
+.plaing {
+    box-shadow: 0 0 3rem yellow;
+}
+
+.key:hover {
+    box-shadow: 0 0 3rem yellow;
+}
+
+kbd {
+    display: block;
+    font-size: 3rem;
+}
+
+.note {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: blue;
+}
