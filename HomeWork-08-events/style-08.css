@@ -2,8 +2,7 @@ html {
     background-image: url("notes.jpg");
     font-size: 10px;
     background-size: cover;
-    position: fixed;
-    overflow: hidden;
+       overflow: hidden;
     text-align: center;
     color: white;
 }
